@@ -17,10 +17,11 @@
     "Themes"
   ],
   "keywords": [
-    "Theme",
-    "Dark Theme",
-    "Buenos Aires",
-    "Buenos Aires Dark"
+    "theme",
+    "color-theme",
+    "dark",
+    "dark theme",
+    "buenos aires"
   ],
   "icon": "theme-icon.png",
   "contributes": {
