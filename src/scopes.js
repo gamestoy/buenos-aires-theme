@@ -1,0 +1,30 @@
+import { palette } from './palette.js';
+
+export const colorScopes = {
+  entity: palette.primary.mint,
+  variable: palette.primary.blue,
+  property: palette.secondary.green,
+  attribute: palette.secondary.green,
+  parameter: palette.primary.green,
+  status: {
+    success: palette.primary.green,
+    invalid: palette.primary.red,
+    warning: palette.primary.orange,
+  },
+  keyword: palette.primary.red,
+  language: palette.primary.red,
+  function: palette.primary.orange,
+  functionCall: palette.primary.cream,
+  namespace: palette.primary.mint,
+  constant: palette.primary.brown,
+  decorator: palette.secondary.pink,
+  string: palette.primary.grey,
+  quoted: palette.primary.yellow,
+  documentation: palette.secondary.grey,
+  documentationKeyword: palette.primary.grey,
+  regexp: palette.secondary.blue,
+  operator: palette.primary.grey,
+  number: palette.primary.pink,
+  text: palette.primary.grey,
+  languageVariable: palette.secondary.purple,
+};

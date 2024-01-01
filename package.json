@@ -1,0 +1,51 @@
+{
+  "name": "buenos-aires",
+  "displayName": "Buenos Aires",
+  "description": "An eclectic dark theme inspired by Buenos Aires",
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "publisher": "gamestoy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gamestoy/buenos-aires-vscode"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark Theme",
+    "Buenos Aires",
+    "Buenos Aires Dark"
+  ],
+  "icon": "theme-icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Buenos Aires",
+        "uiTheme": "vs-dark",
+        "path": "./themes/BuenosAires-dark-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "nodemon": "3.0.2",
+    "lint-staged": "15.2.0",
+    "prettier": "^3.1.1",
+    "vsce": "2.15.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "prettier --check .",
+    "build": "node src/build.js",
+    "package": "nodemon --exec vsce package"
+  },
+  "lint-staged": {
+    "./src/**/*.js": ["prettier --write"]
+  }
+}
