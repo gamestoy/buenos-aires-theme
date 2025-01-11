@@ -2,7 +2,7 @@
   "name": "buenos-aires",
   "displayName": "Buenos Aires",
   "description": "An eclectic dark theme inspired by Buenos Aires",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "engines": {
     "vscode": "^1.85.0"
@@ -34,19 +34,22 @@
     ]
   },
   "devDependencies": {
-    "husky": "^8.0.0",
-    "nodemon": "3.0.2",
-    "lint-staged": "15.2.0",
-    "prettier": "^3.1.1",
-    "vsce": "2.15.0"
+    "@vscode/vsce": "^3.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "15.3.0",
+    "nodemon": "3.1.9",
+    "prettier": "^3.4.2"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "lint": "prettier --check .",
     "build": "node src/build.js",
-    "package": "nodemon --exec vsce package"
+    "package": "nodemon --exec vsce package",
+    "publish": "nodemon --exec vsce publish"
   },
   "lint-staged": {
-    "./src/**/*.js": ["prettier --write"]
+    "./src/**/*.js": [
+      "prettier --write"
+    ]
   }
 }
